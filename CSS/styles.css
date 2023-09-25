@@ -15,6 +15,9 @@ li {
 body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  display: flex;
+  flex-direction: column; /* Make the body a flex container */
 }
 
 /* Add some padding and center the content in a container */
@@ -22,6 +25,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  flex-grow: 1; /* Allow the container to grow to fill available space */
 }
 
 /* Style the header */
@@ -92,6 +96,8 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  /* Sticky footer styles */
+  flex-shrink: 0;
 }
 
 /* Responsive design for smaller screens */
@@ -100,5 +106,3 @@ footer {
     padding: 10px;
   }
 }
-
-/* Add more specific styles as needed for your website */
