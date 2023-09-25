@@ -39,22 +39,34 @@ header {
 /* Style the navigation menu */
 nav {
   background-color: #444;
+  text-align: center; /* Center-align the text */
+  padding: 10px 0;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  display: flex; /* Use flexbox to center and create a box */
+  justify-content: center; /* Horizontally center the items */
+  gap: 20px; /* Add spacing between menu items */
 }
 
 nav li {
   display: inline;
-  margin-right: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
+  padding: 10px 15px; /* Add padding to create the box */
+  border-radius: 4px; /* Add rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
 }
+
+nav a:hover {
+  background-color: #333; /* Background color on hover */
+}
+
 
 /* Style the main content area */
 .main-content {
