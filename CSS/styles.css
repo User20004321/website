@@ -13,8 +13,6 @@ li {
 
 /* Set a background color and default font for the entire page */
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
 }
@@ -56,7 +54,6 @@ nav a {
 
 /* Style the main content area */
 .main-content {
-  flex-grow: 1;
   background-color: #fff;
   padding: 20px;
   margin-top: 20px;
